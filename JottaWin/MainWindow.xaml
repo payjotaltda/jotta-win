@@ -1,0 +1,30 @@
+<Window x:Class="JottaWin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="JOTTA · Configurações"
+        Width="480" Height="220"
+        WindowStartupLocation="CenterScreen"
+        Background="{StaticResource BgBrush}"
+        FontFamily="Segoe UI Variable, Segoe UI, sans-serif">
+  <Grid Margin="20">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <TextBlock Text="Servidor (Tailscale)" Foreground="{StaticResource GoldBrush}" FontWeight="SemiBold"/>
+    <TextBox x:Name="ServerUrlBox" Grid.Row="1" Margin="0,10,0,0" Padding="10,8"
+             Background="{StaticResource PanelBrush}" Foreground="{StaticResource TextBrush}"
+             BorderBrush="{StaticResource LineBrush}"/>
+    <TextBlock Grid.Row="2" Margin="0,12,0,0" TextWrapping="Wrap" FontSize="11"
+               Foreground="{StaticResource MutedBrush}"
+               Text="Ex.: https://storage-dev.tailf8d872.ts.net:8443 — Tailscale ligado no notebook."/>
+    <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,16,0,0">
+      <Button Content="Cancelar" Click="Cancel_Click" Margin="0,0,8,0" Padding="14,8"
+              Background="Transparent" Foreground="{StaticResource MutedBrush}" BorderBrush="{StaticResource LineBrush}"/>
+      <Button Content="Salvar" Click="Save_Click" Padding="18,8"
+              Background="{StaticResource GoldBrush}" Foreground="#1A1510" BorderThickness="0"/>
+    </StackPanel>
+  </Grid>
+</Window>

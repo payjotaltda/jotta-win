@@ -1,0 +1,18 @@
+<Application x:Class="JottaWin.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Application.Resources>
+    <Color x:Key="Bg">#0C0E12</Color>
+    <Color x:Key="Panel">#111419</Color>
+    <Color x:Key="Line">#1E2228</Color>
+    <Color x:Key="Gold">#D4B896</Color>
+    <Color x:Key="Text">#E2E8EF</Color>
+    <Color x:Key="Muted">#7A8794</Color>
+    <SolidColorBrush x:Key="BgBrush" Color="{StaticResource Bg}"/>
+    <SolidColorBrush x:Key="PanelBrush" Color="{StaticResource Panel}"/>
+    <SolidColorBrush x:Key="LineBrush" Color="{StaticResource Line}"/>
+    <SolidColorBrush x:Key="GoldBrush" Color="{StaticResource Gold}"/>
+    <SolidColorBrush x:Key="TextBrush" Color="{StaticResource Text}"/>
+    <SolidColorBrush x:Key="MutedBrush" Color="{StaticResource Muted}"/>
+  </Application.Resources>
+</Application>
